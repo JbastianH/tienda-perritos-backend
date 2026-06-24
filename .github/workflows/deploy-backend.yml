@@ -39,7 +39,7 @@ jobs:
 
       # Se actualiza la configuración de Kubernetes para conectar con el clúster
       - name: Actualizar Kubeconfig
-        run: aws eks update-kubeconfig --region us-east-1 --name proyectoeks
+        run: aws eks update-kubeconfig --region us-east-1 --name projecteks
 
       # Se genera el manifiesto del secreto dinámicamente y se despliega la infraestructura
       - name: Desplegar infraestructura en EKS
