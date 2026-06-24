@@ -16,6 +16,7 @@ spec:
       containers:
         - name: backend
           image: 276795820877.dkr.ecr.us-east-1.amazonaws.com/backend-actividad:eks-v1 # Colocar uri de tu imagen en ECR
+          imagePullPolicy: Always
           ports:
             - containerPort: 3001
           env:
